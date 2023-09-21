@@ -5,9 +5,9 @@ const Container = props => {
   return (
     <ScrollView>
         <View style={styles.container}>
-        <View style={styles.center}>
+        <View style={styles.top}>
             <Text style={styles.titulo}>{props.titulo}</Text>
-            <Image source={props.console} style={styles.imgConsole} />
+            <Image source={props.console} style={styles.imgConsole} resizeMode="cover"/>
             <Text>
                 {props.historia}
             </Text>
@@ -31,16 +31,18 @@ const Container = props => {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 15,
+        padding: 20,
         alignItems: 'center',
         justifyContent: 'center',
     },
-    center: {
+    top: {
         alignItems: 'center',
         justifyContent: 'center',
+        gap: 30
     },
     titulo: {
         fontWeight: 700,
+        fontSize: 18
     },
     imgConsole: {
       width: 250,
