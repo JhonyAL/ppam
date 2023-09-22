@@ -20,6 +20,7 @@ const Container = props => {
                         titulo={e.titulo}  
                         descricao={e.descricao}
                         data={e.dataEsp ?? false}
+                        color={props.color}
                     />
                 )
             })
@@ -38,11 +39,11 @@ const styles = StyleSheet.create({
     top: {
         alignItems: 'center',
         justifyContent: 'center',
-        gap: 30
+        gap: 35
     },
     titulo: {
         fontWeight: 700,
-        fontSize: 18
+        fontSize: 17
     },
     imgConsole: {
       width: 250,

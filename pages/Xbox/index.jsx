@@ -58,6 +58,10 @@ const data = [
                 text2: 'Para o Xbox One'
             }
         ]
+    },
+    {
+        titulo: 'Conclusão',
+        descricao: 'A Microsoft conseguiu criar com o Xbox uma grande base de fãs em todo mundo que jogam suas franquias diariamente. O que começou como uma tentativa de defender o territórios dos PCs nas salas se tornou um dos produtos mais vendidos da companhia e parte de um dos setores mais lucrativos da industria do entretenimento.'
     }
 ]
 
@@ -68,6 +72,7 @@ export default function Xbox () {
       console={require('../../assets/historia/console-xbox.png')}
       historia={'A Microsoft começou sua história com o público gamer em 2001, com o lançamento do Xbox. Lançado na época para concorrer com o PS2 da Sony e o Game Cube da Nintendo. O Xbox oferecia um hardware mais poderoso que o dos seus concorrentes. \n\nE para mostrar a capacidade desse novo console super poderoso a Microsoft precisava de um jogo que usasse todo esse potencial, e foi aí que surgiu Halo, que fez um enorme sucesso atingindo uma imensa base de fãs, principalmente nos Estados Unidos.'}
       data={data}
+      color={'#008000'}
     />
     // <ScrollView>
     //     <View>
